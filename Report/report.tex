@@ -127,6 +127,16 @@ The best case input for the algorithm will be when the input vector is of size $
 There is no worst case input for the DFT algorithm. In the average case, the input vector is of size $n$. The DFT in this case would return a vector of size $n$. The runtime complexity of the algorithm in this case would be $O(n^{2})$.
 \end{itemize}
 
+\textbf{Numerical Characterization of the Running Time} \\ \\
+\includegraphics[scale=0.3]{dft}
+\begin{center}
+Plot showing the runtime of DFT.  \\
+\end{center}
+The input here is a vector of length 2-1024 (Due to limitations in RAM, it could not be extended for further values of $N$). The y-axis of the graph represents the running time of the algorithm. Here, the input vector $a$ is randomly generated. The graph shows a $O(n^{2})$ bound for the runtime of the algorithm.\\ \\
+The graph for the running time for the DFT in semilogx scale is as shown below: \\ \\
+\includegraphics[scale=0.3]{logscale-dft} \\ \\
+
+
 \textbf{Space Complexity}
 \begin{itemize}
 \item The input and output vectors are of length $n$ each. Both take $O(n)$ space.
@@ -242,18 +252,12 @@ There is no worst case input for the FFT algorithm. In the general case, the coe
 In this case, the algorithm will take $O(nlogn)$ time.
 
 \subsection{Numerical Characterization of the Runtime}
-\includegraphics[scale=0.3]{dft}
-\begin{center}
-Plot showing the runtime of DFT.  \\
-\end{center}
-The input here is a vector of length 2-1024 (Due to limitations in RAM, it could not be extended for further values of $N$). The y-axis of the graph represents the running time of the algorithm. Here, the input vector $a$ is randomly generated. The graph shows a $O(n^{2})$ bound for the runtime of the algorithm.\\ \\
+
 \includegraphics[scale=0.3]{fft}
 \begin{center}
 Plot showing the runtimes of FFT
 \end{center}
 The input here is a vector of length 2-1048576 ($2^{0}$ to $2^{20}$). The y-axis of the graph represents the running time of the algorithm. Here, the input vector $a$ is randomly generated. The graph shows a $O(nlog(n))$ bound for the algorithm. \\ \\
-The graph for the running time for the DFT in semilogx scale is as shown below: \\ \\
-\includegraphics[scale=0.3]{logscale-dft} \\ \\
 The graph for the running time for the FFT in semilogx scale is as shown below: \\ \\
 \includegraphics[scale=0.3]{fft-logscale}
 
