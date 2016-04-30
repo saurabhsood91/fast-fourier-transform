@@ -122,9 +122,11 @@ Thus, the overall time complexity is $O(n^{2})$ \\
 \textbf{Runtime Analysis for Best Case, Worst Case, Average Case Inputs}
 \begin{itemize}
 \item
-The best case input for the algorithm will be when the input vector is of size $1$, in which case the algorithm will return the input vector itself. In this case, the algorithm will run in $O(1)$ time.
-\item
+\textbf{Worst/Average Case} \\
 There is no worst case input for the DFT algorithm. In the average case, the input vector is of size $n$. The DFT in this case would return a vector of size $n$. The runtime complexity of the algorithm in this case would be $O(n^{2})$.
+\item
+\textbf{Best Case} \\
+The Best Case of the DFT is the same as the average case. The runtime in this case will also be $O(n^{2})$.
 \end{itemize}
 
 \textbf{Numerical Characterization of the Running Time} \\ \\
@@ -247,9 +249,15 @@ T(n)&=2T(\frac{n}{2})+\Theta(n) \\
 Thus, the Fast Fourier Transform is an asymptotic upgrade over the basic implementation of the Discrete Fourier Transform
 
 \subsection{Runtime Analysis for Worst Case, Average Case Inputs}
-\textbf{Average Case/Worst Case inputs} \\
+\begin{itemize}
+\item 
+\textbf{Worst/Average Case} \\
 There is no worst case input for the FFT algorithm. In the general case, the coefficient vector is a vector of length $n$, where $n=2^{k}$; $k>0$. \\
 In this case, the algorithm will take $O(nlogn)$ time.
+\item
+\textbf{Best Case} \\
+The Best Case of the DFT is the same as the average case. The runtime in this case will also be $O(n^{2})$.
+\end{itemize}
 
 \subsection{Numerical Characterization of the Runtime}
 
